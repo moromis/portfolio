@@ -1,0 +1,60 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<%- include('partials/head') %>
+
+<body>
+
+<!------------------------------------------------------------------------------
+--
+--                        Navigation Buttons
+--
+------------------------------------------------------------------------------->
+<%- include('partials/navbar') %>
+
+<!------------------------------------------------------------------------------
+--
+--                              Title
+--
+------------------------------------------------------------------------------->
+<%- include('partials/title') %>
+
+
+<!------------------------------------------------------------------------------
+--
+--                  Main Content
+--
+------------------------------------------------------------------------------->
+<div class="container col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 offset-0 offset-sm-0 offset-md-2 offset-lg-2 offset-xl-2 body-text">
+    <div class="jumbotron row w3-theme3-l1">
+        <div class="container mb-5 mt-5 title-text" style="text-align: center">
+            <h1>My project, Sudoku Generator generates sudoku puzzles.</h1><br><br>
+            <h2>Written in c++, the generator creates a two page sudoku puzzle, with modifiable difficulty level (through the code - must recompile).
+                The program's output is a text file, formatted for printing on 8.5x11 pages. My initial intention was to create an online version
+                so you could immediately print the sudoku, but I haven't done that yet.</h2><br><br>
+            <h1 class="display-4"><b><a href="downloads/SudokuGenerator.zip"><i class="fas fa-cloud-download-alt"></i>Download it now!</a></b></h1><br><br>
+            <h2>Take a look at <a href="https://github.com/moromis/SudokuGenerator">the source code here <i class="fab fa-github"></i></a></h2>
+        </div>
+    </div>
+</div>
+
+
+<!------------------------------------------------------------------------------
+ --
+ --                 Footer
+ --
+ ------------------------------------------------------------------------------->
+<%- include('partials/footer') %>
+
+<!------------------------------------------------------------------------------
+--
+--                 Scripts
+--
+------------------------------------------------------------------------------->
+
+<!-- bootstrap js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="libs/bootstrap/js/bootstrap.js"></script>
+
+</body>
+</html>

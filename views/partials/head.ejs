@@ -1,0 +1,62 @@
+<head>
+
+    <!-- Title -->
+    <title>Moromis.com</title>
+
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Jquery import -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap/css/bootstrap.css">
+
+    <!-- fontawesome -->
+    <script src="../libs/fontawesome/svg-with-js/js/fontawesome-all.min.js"></script>
+
+    <!-- color theme from W3.css-->
+    <link rel="stylesheet" type="text/css" href="../css/Colors.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Assistant:800" rel="stylesheet">
+
+    <style>
+        /* vertical alignment style */
+        .vertical-align {
+            display: flex;
+            align-items: center;
+        }
+
+        .title-text {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .body-text {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .main-text {
+            font-family: 'Assistant', sans-serif;
+        }
+
+    </style>
+
+    <!-- nightlight -->
+    <script src="../libs/Nightlight/nightlight.js"></script>
+
+    <!-- nightlight listener -->
+    <script defer src="../libs/Nightlight/nightlight_listener.js"></script>
+
+    <!-- load currently playing from spotify -->
+    <script defer src="../js/spotifyGetCurrentlyPlaying.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover({html:true})
+        })
+    </script>
+
+</head>

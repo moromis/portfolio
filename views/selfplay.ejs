@@ -1,0 +1,61 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<%- include('partials/head') %>
+
+<body>
+
+<!------------------------------------------------------------------------------
+--
+--                        Navigation Button
+--
+------------------------------------------------------------------------------->
+<%- include('partials/navbar') %>
+
+<!------------------------------------------------------------------------------
+--
+--                              Title
+--
+------------------------------------------------------------------------------->
+<%- include('partials/title') %>
+
+<!------------------------------------------------------------------------------
+--
+--                  Main Content
+--
+------------------------------------------------------------------------------->
+<div class="container col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 offset-0 offset-sm-0 offset-md-2 offset-lg-2 offset-xl-2 body-text">
+    <div class="jumbotron row w3-theme2-l1">
+        <div class="container mb-5 mt-5 title-text" style="text-align: center">
+            <h1>SelfPlay is my most recent project, which I'm currently working on.</h1><br><br>
+            <h2>It's a plug-and-play (so to speak) learning platform for chess engines. Written in Javascript
+                with Socket.IO, two chess engines plug into a chess board and play each other. The nature of the
+                application allows for any two chess engines to face each other, and makes training engines and
+                testing their performance easy.</h2><br><br>
+            <h2>This project is inspired by the <a href="https://arxiv.org/abs/1712.01815">2017 Alphazero paper</a>.</h2>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------------------------------------------------
+ --
+ --                 Footer
+ --
+ ------------------------------------------------------------------------------->
+<%- include('partials/footer') %>
+
+<!------------------------------------------------------------------------------
+--
+--                 Scripts
+--
+------------------------------------------------------------------------------->
+
+<!-- bootstrap js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="libs/bootstrap/js/bootstrap.js"></script>
+
+<!-- nightlight listener -->
+<script src="libs/Nightlight/nightlight_listener.js"></script>
+
+</body>
+</html>

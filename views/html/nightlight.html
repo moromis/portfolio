@@ -1,0 +1,134 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<!--&lt;!&ndash; Link CSS stylesheet &ndash;&gt;-->
+<!--<link rel="stylesheet" href="Home.css">-->
+
+<head>
+
+    <!-- Title -->
+    <title>Nightlight - Moromis.com</title>
+
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Jquery import -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap/css/bootstrap.css">
+
+    <!-- fontawesome -->
+    <script src="../libs/fontawesome/svg-with-js/js/fontawesome-all.min.js"></script>
+
+    <!-- color theme from W3.css-->
+    <link rel="stylesheet" type="text/css" href="../css/Colors.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Assistant:800" rel="stylesheet">
+
+    <style>
+        /* vertical alignment style */
+        .vertical-align {
+            display: flex;
+            align-items: center;
+        }
+
+        .title-text {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .body-text {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .main-text {
+            font-family: 'Assistant', sans-serif;
+        }
+    </style>
+
+    <!-- nightlight -->
+    <script src="../libs/Nightlight/nightlight.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover({html:true})
+        })
+    </script>
+
+</head>
+<body>
+
+<!------------------------------------------------------------------------------
+--
+--                        Navigation Button
+--
+------------------------------------------------------------------------------->
+<div class="container body-text mt-4 col-12">
+    <div class="d-flex flex-row">
+        <a class="btn btn-outline-secondary" style="text-decoration:none" href="/">Home</a>
+        <button type="button" class="btn btn-secondary offset-xl-5 offset-lg-5 offset-md-4 offset-sm-4 offset-2"
+                data-container="body" data-toggle="popover" data-placement="bottom"
+                data-content="I'm Kevin Ulrich, or moromis. I'm a software engineer hailing from the Pacific Northwest. My main pursuits lie in AI-related
+                    topics lately, including neural networks, genetic algorithms, and big data. I also love computer vision and game design,
+                    though I haven't had much time for the latter in a while. <br><a href='mailto:kzulrich@gmail.com'>Toss me an email.</a>">
+            About Me
+        </button>
+        <a class="btn btn-outline-secondary offset-xl-5 offset-lg-4 offset-md-4 offset-sm-3 offset-2" id="nightlight">Dark</a>
+    </div>
+</div>
+
+<!------------------------------------------------------------------------------
+--
+--                              Title
+--
+------------------------------------------------------------------------------->
+<div class="container mb-5 mt-5 title-text" style="text-align: center">
+    <h1 class="display-1">moromis</h1>
+</div>
+
+
+<!------------------------------------------------------------------------------
+--
+--                  Main Content
+--
+------------------------------------------------------------------------------->
+<div class="container col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 offset-0 offset-sm-0 offset-md-2 offset-lg-2 offset-xl-2 body-text">
+    <div class="jumbotron row w3-theme4-l1">
+        <div class="container mb-5 mt-5 title-text" style="text-align: center">
+            <h1>Nightlight is the simple turn-off-the-lights solution for web design.</h1><br><br>
+            <h2>Completely lightweight and easy to implement, <b>you can see it in action on this very website!</b>
+            All you need is a button like the one in the top right corner and night mode toggle is enabled.</h2><br><br>
+            <h2>The code is incredibly lightweight and is implemented on cookies and dynamic CSS changes in the header.
+                Take a look at <a href="https://github.com/moromis/Nightlight/tree/master">source code here. <i class="fab fa-github"></i></a></h2>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------------------------------------------------
+ --
+ --                 Footer
+ --
+ ------------------------------------------------------------------------------->
+
+<footer style="text-align: center">
+    <p>Copyright 2018 Kevin Ulrich, All Rights Reserved. <a href="mailto:kzulrich@gmail.com">Contact Me</a></p>
+</footer>
+
+<!------------------------------------------------------------------------------
+--
+--                 Scripts
+--
+------------------------------------------------------------------------------->
+
+<!-- bootstrap js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="../libs/bootstrap/js/bootstrap.js"></script>
+
+<!-- nightlight listener -->
+<script src="../libs/Nightlight/nightlight_listener.js"></script>
+
+</body>
+</html>

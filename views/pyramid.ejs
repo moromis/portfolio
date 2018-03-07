@@ -1,0 +1,66 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<%- include('partials/head') %>
+
+<body>
+
+<!------------------------------------------------------------------------------
+--
+--                        Navigation Buttons
+--
+------------------------------------------------------------------------------->
+<%- include('partials/navbar') %>
+
+<!------------------------------------------------------------------------------
+--
+--                              Title
+--
+------------------------------------------------------------------------------->
+<%- include('partials/title') %>
+
+<!------------------------------------------------------------------------------
+--
+--                  Main Content
+--
+------------------------------------------------------------------------------->
+<div class="container col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 offset-0 offset-sm-0 offset-md-2 offset-lg-2 offset-xl-2 body-text">
+    <div class="jumbotron row w3-theme-l1">
+        <div class="container mb-5 mt-5 title-text" style="text-align: center">
+            <h1>A small, one-two day game I made in the Summer of 2013, among several lost games I made at the time.</h1><br><br>
+            <h1 class="alt-body-text"><i>You are an archaeologist seeking the treasure of the pharoah's pyramid tomb. Dig out squares to find the key hiding
+                    on the fifth before venturing to the tenth, and lowest, level and unlocking the chest containing the treasure. Then the real adventure begins! With the
+                    treasure in hand, make your way out of the pyramid alive... <b>if you can.</b></i></h1><br><br>
+            <h1 class="display-4"><b><a href="downloads/PYRAMID%20V%200.6.zip"><i class="fas fa-cloud-download-alt"></i>Download it now!</a></b></h1><br><br>
+            <h2><b>Controls:<br>
+                    Arrow Keys = movement;<br>
+                    E = mine a block;<br>
+                    Q = descend stairs;<br></b></h2><br><br>
+            <h2>PYRAMID was developed in Flash using ActionScript 3 and FlashDevelop, using the Flixel library. I am currently unable to find the source code for any of my games.</h2><br><br><br>
+            <h3>Check out the Flixel library <a href="http://flixel.org/" target="_blank">here.</a></h3>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------------------------------------------------
+ --
+ --                 Footer
+ --
+ ------------------------------------------------------------------------------->
+<%- include('partials/footer') %>
+
+<!------------------------------------------------------------------------------
+--
+--                 Scripts
+--
+------------------------------------------------------------------------------->
+
+<!-- bootstrap js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="libs/bootstrap/js/bootstrap.js"></script>
+
+<!-- nightlight listener -->
+<script src="libs/Nightlight/nightlight_listener.js"></script>
+
+</body>
+</html>

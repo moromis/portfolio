@@ -1,0 +1,102 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<%- include('partials/head') %>
+
+<body>
+
+<!------------------------------------------------------------------------------
+--
+--                        Navigation Buttons
+--
+------------------------------------------------------------------------------->
+<%- include('partials/navbar') %>
+
+<!------------------------------------------------------------------------------
+--
+--                              Title
+--
+------------------------------------------------------------------------------->
+<%- include('partials/title') %>
+
+
+<!------------------------------------------------------------------------------
+--
+--                  Currently playing song on Spotify
+--
+------------------------------------------------------------------------------->
+<div class="container col-8 offset-2 body-text">
+    <div class="jumbotron row w3-theme-l1">
+        <div class="col-lg-3 col-md-3 col-sm-3 align-self-center">
+            <img id="spotifyCover" class="img-thumbnail img-responsive" src="imgs/static.gif">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 offset-2 align-self-center">
+            <h3 id="spotifySong" >I'm not listening to Spotify right now</h3>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------------------------------------------------
+--
+--                         Projects Title
+--
+------------------------------------------------------------------------------->
+<div class="container mb-5 mt-5 title-text" style="text-align: center">
+    <h1 class="display-4">Projects</h1>
+</div>
+
+<!------------------------------------------------------------------------------
+--
+--                              Projects
+--
+------------------------------------------------------------------------------->
+<div class="container-fluid row">
+    <a href="/SelfPlay" class="jumbotron col-lg-3 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1 offset-1 text-center w3-theme2-l1 main-text align-self-center" style="font-size:6em;">
+        <i class="fas fa-chess"></i>
+        <h1 id="Project1" >SelfPlay</h1>
+    </a>
+    <a href="/Nightlight" class="jumbotron col-lg-3 col-md-10 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1 offset-1 text-center w3-theme4-l1 main-text align-self-center" style="font-size:6em;">
+        <i class="far fa-lightbulb"></i>
+        <h1 id="Project2" >Nightlight</h1>
+    </a>
+    <a href="/Sudoku" class="jumbotron col-lg-3 col-md-10 col-sm-10 offset-lg-3 offset-md-1 offset-sm-1 offset-1 text-center w3-theme3-l1 main-text align-self-center" style="font-size:6em;">
+        <i class="fas fa-th"></i>
+        <h1 id="Project3" >Sudoku Generator</h1>
+    </a>
+    <a href="/Pyramid" a class="jumbotron col-lg-3 col-md-10 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1 offset-1 text-center w3-theme-l1 main-text align-self-center" style="font-size:6em;">
+        <i class="fas fa-gamepad"></i>
+        <h1 id="Project4" >Pyramid</h1>
+    </a>
+    <a href="/DungeonCrawl"  class="jumbotron col-lg-3 col-md-10 col-sm-10 offset-lg-2 offset-md-1 offset-sm-1 offset-1 text-center w3-theme2-l1 main-text align-self-center" style="font-size:6em;">
+        <i class="fas fa-compress"></i>
+        <h1 id="Project5" >Dungeon Crawler</h1>
+    </a>
+    <a href="/Moromis.com" class="jumbotron col-lg-3 col-md-10 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1 offset-1 text-center w3-theme4-l1 main-text align-self-center" style="font-size:6em;">
+        <i class="fab fa-aws"></i>
+        <h1 id="Project6" >Moromis.com</h1>
+    </a>
+    <a class="jumbotron col-lg-10 col-md-10 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1 offset-1 text-center w3-theme-l2 main-text align-self-center" style="font-size:6em;">
+        <i class="fas fa-ellipsis-h"></i>
+        <h1 id="Project7" >More Coming Soon</h1>
+    </a>
+</div>
+
+<!------------------------------------------------------------------------------
+ --
+ --                 Footer
+ --
+ ------------------------------------------------------------------------------->
+<%- include('partials/footer') %>
+
+<!------------------------------------------------------------------------------
+--
+--                 Scripts
+--
+------------------------------------------------------------------------------->
+
+<!-- bootstrap js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="libs/bootstrap/js/bootstrap.js"></script>
+
+</body>
+</html>

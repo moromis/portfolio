@@ -1,0 +1,24 @@
+{
+  "name": "newmoromis.com",
+  "version": "1.0.0",
+  "description": "new build of moromis.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Ulrich",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "dotenv": "^5.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "handlebars": "^4.0.11",
+    "http": "0.0.0",
+    "js-logging": "^0.1.0",
+    "path": "^0.12.7",
+    "querystring": "^0.2.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}
