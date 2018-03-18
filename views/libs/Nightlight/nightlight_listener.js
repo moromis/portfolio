@@ -4,7 +4,7 @@ document.getElementById("nightlight").addEventListener("click", function(){
     //set up a style element to write our changes to
     var sheet = document.createElement('style');
 
-    if(document.cookie === "nightlight=light" || document.cookie === "") {
+    if(document.cookie.includes("nightlight=light") || document.cookie === "") {
 
         //change the text of the element that we clicked
         document.getElementById("nightlight").innerHTML = "Light";
@@ -16,7 +16,7 @@ document.getElementById("nightlight").addEventListener("click", function(){
         //set a cookie so we know which mode we're in globally
         document.cookie = "nightlight=dark";
 
-    }else if(document.cookie === "nightlight=dark") {
+    }else if(document.cookie.includes("nightlight=dark")) {
 
         //change the text of the element that we clicked
         document.getElementById("nightlight").innerHTML = "Dark";

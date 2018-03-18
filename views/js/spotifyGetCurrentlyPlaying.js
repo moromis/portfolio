@@ -1,7 +1,7 @@
 $.ajax({
     type: 'GET',
     contentType: 'application/json',
-    url: 'http://moromis.com/getCurrentlyPlaying',
+    url: 'http://moromis.com/getCurrentlyPlaying',/
     // url: 'http://localhost:3000/getCurrentlyPlaying',
     success: function (data) {
         if (data.status === 'listening') {
