@@ -15,7 +15,6 @@ require('dotenv').config();
 var express = require('express'); // Express web server framework
 var path = require('path'); // path
 var rp = require('request-promise'); // request-promise
-var logger = require('js-logging').console(); // logging util
 
 //set up express
 var app = express();
@@ -94,7 +93,7 @@ var spotifyIntervalCall = setInterval(callSpotify, 15000);
 
 function callSpotify() {
 
-    logger.debug('/getCurrentlyPlaying');
+    console.log('/getCurrentlyPlaying');
 
     var options = {
         url: 'https://api.spotify.com/v1/me/player/currently-playing',
@@ -114,7 +113,7 @@ function callSpotify() {
         json: true
     };
 
-    logger.debug('sending request for currently playing');
+    console.log('sending request for currently playing');
     rp(options)
         .then(function (body){
             if(body !== undefined) {
@@ -132,7 +131,7 @@ function callSpotify() {
         })
         .catch(function (err){
             console.error(err.status, err.message);
-            logger.debug('sending request for refresh');
+            console.log('sending request for refresh');
             rp(refreshOptions)
                 .then(function(body){
 
@@ -146,7 +145,7 @@ function callSpotify() {
                         json: true
                     };
 
-                    logger.debug('after refresh, getting song');
+                    console.log('after refresh, getting song');
                     rp(options)
                         .then(function (body){
                             if(body !== undefined) {
@@ -165,7 +164,7 @@ function callSpotify() {
 
                 })
                 .catch(function(err){
-                    logger.error(err.status, err.message);
+                    console.log(err.status, err.message);
                 });
         });
 }
