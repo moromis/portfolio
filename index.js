@@ -62,7 +62,14 @@ app.get('/Nightlight', function(request, response) {
 
 });
 
-//Nightlight page
+//Car Classification page
+app.get('/CarClassification', function(request, response) {
+
+    response.render('carclassification');
+
+});
+
+//Dungeon Crawler page
 app.get('/DungeonCrawl', function(request, response) {
 
     response.render('dungeoncrawl');
