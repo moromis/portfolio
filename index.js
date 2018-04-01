@@ -35,9 +35,9 @@ app.get('/', function(request, response) {
 });
 
 //SelfPlay page
-app.get('/SelfPlay', function(request, response) {
+app.get('/Posters', function(request, response) {
 
-    response.render('selfplay');
+    response.render('posters');
 
 });
 

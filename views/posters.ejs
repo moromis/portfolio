@@ -1,0 +1,70 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<%- include('partials/head') %>
+
+<body>
+
+<!------------------------------------------------------------------------------
+--
+--                        Navigation Button
+--
+------------------------------------------------------------------------------->
+<%- include('partials/navbar') %>
+
+<!------------------------------------------------------------------------------
+--
+--                              Title
+--
+------------------------------------------------------------------------------->
+<%- include('partials/title') %>
+
+<!------------------------------------------------------------------------------
+--
+--                  Main Content
+--
+------------------------------------------------------------------------------->
+<div class="container col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 offset-0 offset-sm-0 offset-md-2 offset-lg-2 offset-xl-2 body-text">
+    <div class="jumbotron row w3-theme2-l1">
+        <div class="container mb-5 mt-5 title-text" style="text-align: left">
+            <h1 style="text-align: center">Posters is my most recent project, which I'm currently working on.</h1><br><br>
+            <h2>
+                As a research project for my last quarter of my senior year at the University of Washington Bothell, I
+                decided to take a look at the impact of a movie's poster on its success.
+                <br><br>
+                For this project, I am using <a href="https://www.kaggle.com/rounakbanik/the-movies-dataset">a dataset from Kaggle</a>
+                which contains over 45,000 movies. I'll be partnering with <a href="https://www.linkedin.com/in/bardiaborhani/">Bardia Borhani</a>.
+                <br><br>
+                We are using Python to write the code for this project, and since live code and constant updates are necessary, we're using Jupyter Notebooks.
+                To create the deep convolutional neural network that we will fit to the data and will perform the predictions, we will be using
+                Keras on top of TensorFlow.
+                <br><br>
+                Some of the problems I'm investigating are:
+                <br><br>
+                <ul>
+                    <li>How should bad data be dealt with?</li>
+                    <br>
+                        <ul>
+                            <li>For instance, in this dataset there are movies with no posters, and there are duplicate posters</li>
+                        </ul>
+                    <br>
+                    <li>How is a movie's success defined?</li>
+                    <br>
+                    <li>Should we retain the original color information of the posters?</li>
+                    <br>
+                    <li>Would ensembling help us achieve a more understandable result, with higher performance?</li>
+                </ul>
+            </h2>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------------------------------------------------
+ --
+ --                 Footer
+ --
+ ------------------------------------------------------------------------------->
+<%- include('partials/footer') %>
+
+</body>
+</html>
