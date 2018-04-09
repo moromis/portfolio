@@ -3,16 +3,35 @@
 --                        Navigation Buttons
 --
 ------------------------------------------------------------------------------->
-<div class="container body-text mt-4 col-12">
+<div class="container body-text mt-4 col-12" style="position: relative;">
     <div class="d-flex flex-row">
-        <a class="btn btn-outline-secondary" style="text-decoration:none" href="/">Home</a>
-        <button type="button" class="btn btn-secondary offset-xl-5 offset-lg-5 offset-md-4 offset-sm-4 offset-2"
+
+        <!-- home navigation button -->
+        <button type="button" class="btn btn-secondary mx-auto">
+            <a href="/" style="text-decoration:none;color: white;">Home</a>
+        </button>
+
+        <!-- linkedin link -->
+        <a href="https://www.linkedin.com/in/kzulrich/" class="mx-auto" style="font-size:5em;text-decoration:none;color: lightskyblue;"><i class="fab fa-linkedin"></i></a>
+
+        <!-- about me button -->
+        <button type="button" class="btn btn-secondary mx-auto"
                 data-container="body" data-toggle="popover" data-placement="bottom"
                 data-content="<h5>I'm Kevin Ulrich, or moromis. I'm a software engineer hailing from the Pacific Northwest. My main pursuits lie in AI-related
     topics lately, including neural networks, genetic algorithms, and big data. I also love computer vision and game design,
-        though I haven't had much time for the latter in a while. <br><a href='mailto:kzulrich@gmail.com'>Toss me an email.</a></h5>">
+        though I haven't had much time for the latter in a while. <br><br>
+        <center><a href='mailto:kzulrich@gmail.com'>Toss me an email.</a></center><br>
+        <center><a href='../downloads/KevinUlrich_Resume.pdf'>Check out my resume.</a></center></h5>">
             About Me
         </button>
-        <a class="btn btn-outline-secondary offset-xl-5 offset-lg-4 offset-md-4 offset-sm-3 offset-2" id="nightlight">Dark</a>
+
+        <!-- Github link -->
+        <a href="https://github.com/moromis" class="mx-auto" style="font-size:5em;text-decoration:none;color: lightskyblue;"><i class="fab fa-github-square"></i></a>
+
+        <!-- Dark mode toggle button -->
+        <button type="button" class="btn btn-secondary mx-auto" id="nightlight">
+            <a style="text-decoration:none;color: white;">Dark</a>
+        </button>
+
     </div>
 </div>
