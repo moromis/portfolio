@@ -1,12 +1,11 @@
+
 //create an event listener for the element with the id of nightlight
 document.getElementById("nightlight").addEventListener("click", function(){
-
-    console.log("this is working");
 
     //set up a style element to write our changes to
     var sheet = document.createElement('style');
 
-    if(document.cookie.includes("nightlight=light") || document.cookie === "") {
+    if(getCookie('nightlight') === 'dark') {
 
         //change the text of the element that we clicked
         document.getElementById("nightlight").innerHTML = "Light";
@@ -16,7 +15,7 @@ document.getElementById("nightlight").addEventListener("click", function(){
         document.body.appendChild(sheet);
 
         //set a cookie so we know which mode we're in globally
-        document.cookie = "nightlight=dark";
+        setCookie('nightlight', 'light', 365)
 
     } else {
 
@@ -28,6 +27,6 @@ document.getElementById("nightlight").addEventListener("click", function(){
         document.body.appendChild(sheet);
 
         //set a cookie so we know which mode we're in globally
-        document.cookie = "nightlight=light";
+        setCookie('nightlight', 'dark', 365)
     }
 });
