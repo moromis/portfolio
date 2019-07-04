@@ -9,16 +9,19 @@
   "author": "Kevin Ulrich",
   "license": "ISC",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "dotenv": "^5.0.0",
-    "ejs": "^2.5.7",
-    "express": "^4.16.2",
-    "handlebars": "^4.0.11",
+    "cheerio": "^1.0.0-rc.3",
+    "dotenv": "^8.0.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "handlebars": "^4.1.2",
     "http": "0.0.0",
     "js-logging": "^0.1.0",
     "path": "^0.12.7",
     "querystring": "^0.2.0",
-    "request": "^2.83.0",
-    "request-promise": "^4.2.2"
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.11"
   }
 }
